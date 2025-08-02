@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="result-container">
+    <h2>Predicted Attack Types:</h2>
+    <ul>
+      {% for pred in predictions %}
+        <li>Row {{ loop.index }}: {{ pred }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Summary Chart:</h3>
+    <img src="{{ url_for('static', filename='images/prediction_chart.png') }}" alt="Pie Chart" width="400" />
+
+    {% if suggestion %}
+    <h3>Security Suggestions:</h3>
+    <p>{{ suggestion }}</p>
+    {% endif %}
+
+    <br><br>
+    <a href="{{ url_for('home') }}">Go Back</a>
+  </div>
+</body>
+</html>

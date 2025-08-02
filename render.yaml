@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: netsentinal-nids
+    runtime: python-3.10
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production

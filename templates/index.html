@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NetSentinal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='images/Logo.jpeg') }}">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Heading -->
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/Logo.jpeg') }}" alt="Net Sentinel Logo" class="logo-img">
+        <span class="net">NET</span><span class="sentinal">SENTINAL</span>
+    </div>
+
+    <!-- Input Field Centered -->
+    <div class="center-container">
+    <div class="input-container">
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="file-input-wrapper">
+                <input type="file" name="file" id="csvFile" accept=".csv" placeholder="Upload DataSet">
+            </div>
+            <div class="button-wrapper">
+                <button type="submit">Upload</button>
+            </div>
+        </form>
+        <div id="result" class="prediction-output"></div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="developed-by">Developed by</div>
+        <div class="names">
+            <span class="name" data-profile="profile1">Sravani</span>
+            <span class="name" data-profile="profile2">Devaki</span>
+            <span class="name" data-profile="profile3">Neha</span>
+            <span class="name" data-profile="profile4">Likitha</span>
+        </div>
+    </footer>
+
+    <!-- Popups -->
+    <div id="profile1" class="profile-popup">
+        <div class="popup-content">
+            <img src="{{ url_for('static', filename='images/Sravani.jpeg') }}" class="popup-img" />
+            <div class="popup-details">
+                <p><strong>Name:</strong> Bisetty Sravani</p>
+                <p><strong>Branch:</strong> CSM</p>
+                <p><strong>Reg No:</strong> 22NM1A4207</p>
+                <p><strong>Email:</strong> <a href="mailto:sravanib669@gmail.com">sravanib669@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile2" class="profile-popup">
+        <div class="popup-content">
+            <img src="{{ url_for('static', filename='images/Devaki.jpeg') }}" class="popup-img" />
+            <div class="popup-details">
+                <p><strong>Name:</strong> Kadupu Devaki Vasundhara</p>
+                <p><strong>Branch:</strong> CSM</p>
+                <p><strong>Reg No:</strong> 22NM1A4217</p>
+                <p><strong>Email:</strong> <a href="mailto:kadupudevakivasundhara123@gmail.com">kadupudevakivasundhara123@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile3" class="profile-popup">
+        <div class="popup-content">
+            <img src="{{ url_for('static', filename='images/Neha.jpeg') }}" class="popup-img" />
+            <div class="popup-details">
+                <p><strong>Name:</strong> Tothadi Neha Gandhi</p>
+                <p><strong>Branch:</strong> CSM</p>
+                <p><strong>Reg No:</strong> 22NM1A4246</p>
+                <p><strong>Email:</strong> <a href="mailto:nehagandhi6655@gmail.com">nehagandhi6655@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile4" class="profile-popup">
+        <div class="popup-content">
+            <img src="{{ url_for('static', filename='images/Likitha.jpeg') }}" class="popup-img" />
+            <div class="popup-details">
+                <p><strong>Name:</strong> Mandala Likitha</p>
+                <p><strong>Branch:</strong> CSM</p>
+                <p><strong>Reg No:</strong> 23NM5A4206</p>
+                <p><strong>Email:</strong> <a href="mailto:mandalalikitha10@gmail.com">mandalalikitha10@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
