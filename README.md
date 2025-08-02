@@ -47,7 +47,7 @@ NETSENTINAL-NIDS/
 
 ⚙️ Setup Instructions
 1.Clone the repository:
-git clone https://github.com/dev-26-17/NETSENTINAL-NIDS.git
+git clone https://github.com/nehagandhi6655/NetSentinal.git
 cd NETSENTINAL-NIDS
 2.Create and activate virtual environment:
 python -m venv venv
@@ -85,9 +85,9 @@ Upload via the interface
 Get immediate results and visual summary
 
 👩‍💻 Developers
-Devaki Vasundhara Kadupu
+Tothadi Neha Gandhi
 
-LinkedIn Profile
+LinkedIn Profile www.linkedin.com/in/nehagandhi6655
 
 📜 License
 This project is licensed under the MIT License.
